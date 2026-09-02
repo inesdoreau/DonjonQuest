@@ -1,0 +1,202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92eb0b7a43cb34f3489ee7efb14c448b, type: 3}
+  m_Name: ReglagesDonjonDeals
+  m_EditorClassIdentifier: Assembly-CSharp::DonjonDeals.GameTuning
+  dureeSecondes: 480
+  fragmentsRequis: 4
+  primeGroupe: 1.25
+  primePuitsDuFond: 1.5
+  vitesseBase: 6.6
+  capacite: 60
+  seuilBlocage: 0.85
+  vitesseBloquee: 2.4
+  penaliteCharge: 0.52
+  vitesseEsquive: 13.5
+  dureeEsquive: 0.42
+  recuperationEsquive: 1.1
+  bruitAVide: 6.5
+  bruitParCharge: 9.5
+  bruitFurtif: 0.55
+  eveilParMinute: 0.16
+  eveilMax: 0.9
+  porteeAttaque: 2.9
+  recuperationAttaque: 0.62
+  degatsMin: 26
+  degatsMax: 40
+  invulnerabiliteApresCoup: 0.55
+  dureeRelevage: 2.5
+  pvApresRelevage: 40
+  distanceBase: 11.5
+  distanceMax: 21
+  inclinaisonDegres: 30.4
+  rayonGroupe: 26
+  dureeTrappeOuverte: 4
+  degatsChute: 12
+  sautTrappeMin: 4
+  sautTrappeMaxSolo: 60
+  sautTrappeMaxCoop: 7
+  butin:
+  - id: copper_nugget
+    nom: "P\xE9pite de cuivre"
+    valeur: 8
+    poids: 3
+    hauteur: 0.1
+    relique: 0
+    fragment: 0
+  - id: iron_bar
+    nom: Lingot de fer
+    valeur: 16
+    poids: 6
+    hauteur: 0.08
+    relique: 0
+    fragment: 0
+  - id: silver_nugget
+    nom: "P\xE9pite d'argent"
+    valeur: 26
+    poids: 4
+    hauteur: 0.1
+    relique: 0
+    fragment: 0
+  - id: silver_stack
+    nom: Pile d'argent
+    valeur: 64
+    poids: 12
+    hauteur: 0.05
+    relique: 0
+    fragment: 0
+  - id: gold_nugget
+    nom: "P\xE9pite d'or"
+    valeur: 58
+    poids: 5
+    hauteur: 0.1
+    relique: 0
+    fragment: 0
+  - id: gold_bar
+    nom: Lingot d'or
+    valeur: 126
+    poids: 10
+    hauteur: 0.08
+    relique: 0
+    fragment: 0
+  - id: gold_stack
+    nom: Pile de lingots
+    valeur: 310
+    poids: 26
+    hauteur: 0.05
+    relique: 0
+    fragment: 0
+  - id: cog
+    nom: Rouage ancien
+    valeur: 210
+    poids: 2
+    hauteur: 0.22
+    relique: 1
+    fragment: 0
+  - id: map_rolled
+    nom: "Fragment de relev\xE9"
+    valeur: 0
+    poids: 0
+    hauteur: 0.1
+    relique: 0
+    fragment: 1
+  pactes:
+  - id: ivresse
+    famille: 1
+    nom: L'ivresse
+    gain: Tu cours 40 % plus vite.
+    prix: "Tes commandes d\xE9rivent lentement sur elles-m\xEAmes."
+    resume: "+40 % de vitesse \xB7 commandes qui d\xE9rivent"
+    groupe: 0
+    duree: 0
+  - id: geant
+    famille: 1
+    nom: "Le g\xE9ant"
+    gain: "Tu grandis de moiti\xE9, ta port\xE9e augmente d'autant."
+    prix: Tu ne passes plus les murs pivotants, et ta besace perd 40 %.
+    resume: "port\xE9e \xD71.6 \xB7 murs pivotants presque infranchissables"
+    groupe: 0
+    duree: 0
+  - id: lampe
+    famille: 0
+    nom: La lampe
+    gain: 'Trente secondes : ta lanterne porte deux fois plus loin.'
+    prix: "Toutes les torches du labyrinthe s'\xE9teignent. On ne verra que les yeux."
+    resume: "30 s de lumi\xE8re \xB7 le labyrinthe s'\xE9teint"
+    groupe: 0
+    duree: 30
+  - id: sursis
+    famille: 2
+    nom: Le sursis
+    gain: Tu ne peux pas mourir pendant soixante secondes.
+    prix: "\xC0 la fin, tu encaisses d'un coup tout ce que tu as \xE9vit\xE9."
+    resume: "invuln\xE9rable \xB7 la note tombe \xE0 z\xE9ro"
+    groupe: 0
+    duree: 60
+  - id: meche
+    famille: 2
+    nom: "La m\xE8che"
+    gain: Tout ce que tu ramasses vaut 50 % de plus.
+    prix: "Chaque pi\xE8ce ramass\xE9e avance une horloge. Quand elle sonne, tout
+      se r\xE9veille."
+    resume: "butin \xD71.5 \xB7 la m\xE8che br\xFBle"
+    groupe: 0
+    duree: 0
+  - id: aube
+    famille: 2
+    nom: L'aube
+    gain: Tout l'or vaut le double.
+    prix: Il ne reste que deux minutes.
+    resume: "or \xD72 \xB7 deux minutes"
+    groupe: 0
+    duree: 0
+  - id: bouc
+    famille: 0
+    nom: Le bouc
+    gain: "Vingt secondes sans pouvoir \xEAtre bless\xE9."
+    prix: "Un autre joueur, tir\xE9 au sort, encaisse tous les coups \xE0 ta place."
+    resume: "invuln\xE9rable \xB7 quelqu'un paie"
+    groupe: 1
+    duree: 20
+  - id: fardeau
+    famille: 0
+    nom: Le fardeau
+    gain: "Tu vides la moiti\xE9 de ta besace sur-le-champ."
+    prix: "Elle atterrit chez un autre, qui ne peut pas refuser \u2014 mais qui gardera
+      l'or."
+    resume: "moiti\xE9 de charge transf\xE9r\xE9e"
+    groupe: 1
+    duree: 0
+  - id: miroir
+    famille: 0
+    nom: Le miroir
+    gain: "Tu prends le pacte d\xE9j\xE0 sign\xE9 par quelqu'un d'autre."
+    prix: "Il le perd \xE0 l'instant m\xEAme."
+    resume: "pacte vol\xE9"
+    groupe: 1
+    duree: 0
+  - id: serment
+    famille: 0
+    nom: Le serment
+    gain: "Toi et le jur\xE9 frappez 50 % plus fort."
+    prix: S'il tombe, tu tombes avec lui.
+    resume: "+50 % de d\xE9g\xE2ts \xB7 vies li\xE9es"
+    groupe: 1
+    duree: 0
+  - id: silence
+    famille: 0
+    nom: Le silence
+    gain: Tu deviens presque inaudible.
+    prix: Tous les autres font deux fois plus de bruit.
+    resume: "inaudible \xB7 les autres crient"
+    groupe: 1
+    duree: 0
