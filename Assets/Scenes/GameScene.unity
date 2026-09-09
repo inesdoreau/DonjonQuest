@@ -594,6 +594,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4392228976154554953, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
+      propertyPath: Components.Array.data[0].name
+      value: Tree (2) (Capsule Collider)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392228976154554953, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
+      propertyPath: Components.Array.data[1].name
+      value: Tree (2) (Mesh Renderer)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667676635178678125, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
+      propertyPath: m_InScenePlaced
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667676635178678125, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3276659109
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667676635178678125, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667676635178678125, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 1288835277
+      objectReference: {fileID: 0}
     - target: {fileID: 8797905904205309833, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
       propertyPath: GlobalObjectIdHash
       value: 863290568
@@ -884,6 +908,37 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1 &391352729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 391352730}
+  m_Layer: 0
+  m_Name: ---Scene---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &391352730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391352729}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.82592, y: 5.13771, z: 11.33}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &401485506
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,6 +950,7 @@ GameObject:
   - component: {fileID: 401485509}
   - component: {fileID: 401485507}
   - component: {fileID: 401485508}
+  - component: {fileID: 401485510}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -958,6 +1014,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &401485510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401485506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8aef45a76b6548c4abec8a9e8bc7d44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResourceSpawner
+  ShowTopMostFoldoutHeaderGroup: 1
+  m_woodPrefab: {fileID: 4597243190203381656, guid: e936df660d5d23043941bdbc706607c9, type: 3}
+  m_stonePrefab: {fileID: 7628938499703541103, guid: 52b870ca5e67142869af9c1f57882bfd, type: 3}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,6 +1820,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 720351026}
     m_Modifications:
+    - target: {fileID: 2337273509177964120, guid: 28ea3d07c5fa049479b7b6f4f3acc6c8, type: 3}
+      propertyPath: m_InScenePlaced
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337273509177964120, guid: 28ea3d07c5fa049479b7b6f4f3acc6c8, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 2400914538
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337273509177964120, guid: 28ea3d07c5fa049479b7b6f4f3acc6c8, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337273509177964120, guid: 28ea3d07c5fa049479b7b6f4f3acc6c8, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 3713143017
+      objectReference: {fileID: 0}
     - target: {fileID: 3563353031477923501, guid: 28ea3d07c5fa049479b7b6f4f3acc6c8, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -1766,6 +1853,14 @@ PrefabInstance:
       value: Rock (1) (Capsule Collider)
       objectReference: {fileID: 0}
     - target: {fileID: 5127384196278506619, guid: 28ea3d07c5fa049479b7b6f4f3acc6c8, type: 3}
+      propertyPath: Components.Array.data[1].name
+      value: Rock (1) (Mesh Renderer)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5270554633089937690, guid: 28ea3d07c5fa049479b7b6f4f3acc6c8, type: 3}
+      propertyPath: Components.Array.data[0].name
+      value: Rock (1) (Capsule Collider)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5270554633089937690, guid: 28ea3d07c5fa049479b7b6f4f3acc6c8, type: 3}
       propertyPath: Components.Array.data[1].name
       value: Rock (1) (Mesh Renderer)
       objectReference: {fileID: 0}
@@ -1898,6 +1993,30 @@ PrefabInstance:
     - target: {fileID: 2270968747428323374, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
       propertyPath: m_Name
       value: Tree (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392228976154554953, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
+      propertyPath: Components.Array.data[0].name
+      value: Tree (1) (Capsule Collider)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392228976154554953, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
+      propertyPath: Components.Array.data[1].name
+      value: Tree (1) (Mesh Renderer)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667676635178678125, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
+      propertyPath: m_InScenePlaced
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667676635178678125, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 4180791874
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667676635178678125, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667676635178678125, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 1288835277
       objectReference: {fileID: 0}
     - target: {fileID: 8797905904205309833, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
       propertyPath: GlobalObjectIdHash
@@ -2704,6 +2823,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 720351026}
     m_Modifications:
+    - target: {fileID: 2337273509177964120, guid: 28ea3d07c5fa049479b7b6f4f3acc6c8, type: 3}
+      propertyPath: m_InScenePlaced
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337273509177964120, guid: 28ea3d07c5fa049479b7b6f4f3acc6c8, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3886000579
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337273509177964120, guid: 28ea3d07c5fa049479b7b6f4f3acc6c8, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337273509177964120, guid: 28ea3d07c5fa049479b7b6f4f3acc6c8, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 3713143017
+      objectReference: {fileID: 0}
     - target: {fileID: 3563353031477923501, guid: 28ea3d07c5fa049479b7b6f4f3acc6c8, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -2721,6 +2856,14 @@ PrefabInstance:
       value: Rock (Capsule Collider)
       objectReference: {fileID: 0}
     - target: {fileID: 5127384196278506619, guid: 28ea3d07c5fa049479b7b6f4f3acc6c8, type: 3}
+      propertyPath: Components.Array.data[1].name
+      value: Rock (Mesh Renderer)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5270554633089937690, guid: 28ea3d07c5fa049479b7b6f4f3acc6c8, type: 3}
+      propertyPath: Components.Array.data[0].name
+      value: Rock (Capsule Collider)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5270554633089937690, guid: 28ea3d07c5fa049479b7b6f4f3acc6c8, type: 3}
       propertyPath: Components.Array.data[1].name
       value: Rock (Mesh Renderer)
       objectReference: {fileID: 0}
@@ -2891,6 +3034,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 6667676635178678125, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
+      propertyPath: m_InScenePlaced
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667676635178678125, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 1703755539
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667676635178678125, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667676635178678125, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 1288835277
+      objectReference: {fileID: 0}
     - target: {fileID: 8797905904205309833, guid: e4d3a6a6b3552c346994ddb69543052c, type: 3}
       propertyPath: GlobalObjectIdHash
       value: 124115865
@@ -2917,6 +3076,8 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 686450774}
   - {fileID: 401485509}
+  - {fileID: 1999249563}
+  - {fileID: 391352730}
   - {fileID: 592074535}
   - {fileID: 987404083}
   - {fileID: 67691326}
@@ -2928,4 +3089,3 @@ SceneRoots:
   - {fileID: 1462632346}
   - {fileID: 2488478570262511238}
   - {fileID: 636919769}
-  - {fileID: 1999249563}
