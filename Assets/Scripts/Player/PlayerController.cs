@@ -122,6 +122,29 @@ public class PlayerController : NetworkBehaviour
         {
             RequestPickUpRpc(m_interactionDetector.ClosestInteractable.NetworkObject.NetworkObjectId);
         }
+        if( m_interactionDetector.ClosestInteractable is ResourceDropZone)
+        {
+            RequestGiveItemRpc(m_interactionDetector.ClosestInteractable.NetworkObject.NetworkObjectId);
+        }
+    }
+
+    [Rpc(SendTo.Server)]
+    private void RequestGiveItemRpc(ulong networkObjectId)
+    {
+        if(!NetworkManager.SpawnManager.SpawnedObjects.TryGetValue(networkObjectId, out NetworkObject target))
+        {
+            return;
+        }
+        if(!target.TryGetComponent(out ResourceDropZone resourceDropZone))
+        {
+            return;
+        }
+
+        if (resourceDropZone.Interact(m_heldObjectType.Value))
+        {
+            m_heldObjectType.Value = ObjectType.None;
+            m_heldNetworkObjectId.Value = ulong.MaxValue;
+        }
     }
 
     [Rpc(SendTo.Server)]

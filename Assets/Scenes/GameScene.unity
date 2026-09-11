@@ -999,6 +999,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   ShowTopMostFoldoutHeaderGroup: 1
   m_multiplayerUI: {fileID: 306963177}
+  m_playerPrefab: {fileID: 1855797244298458106, guid: 24e075b32f01fa74eae0fe6c15ccb589, type: 3}
+  m_dropZones:
+  - {fileID: 2488478570262511239}
+  - {fileID: 636919770}
 --- !u!4 &401485509
 Transform:
   m_ObjectHideFlags: 0
@@ -1479,6 +1483,18 @@ PrefabInstance:
       propertyPath: InScenePlacedSourceGlobalObjectIdHash
       value: 971452908
       objectReference: {fileID: 0}
+    - target: {fileID: 7932091871869755982, guid: 06db3c10e220542b99c4cfdc494bee32, type: 3}
+      propertyPath: m_InScenePlaced
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932091871869755982, guid: 06db3c10e220542b99c4cfdc494bee32, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 737923525
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932091871869755982, guid: 06db3c10e220542b99c4cfdc494bee32, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 237230785
+      objectReference: {fileID: 0}
     - target: {fileID: 8339971327646784855, guid: 06db3c10e220542b99c4cfdc494bee32, type: 3}
       propertyPath: m_Name
       value: StonePallet
@@ -1528,6 +1544,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06db3c10e220542b99c4cfdc494bee32, type: 3}
+--- !u!114 &636919770 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6874166746038017875, guid: 06db3c10e220542b99c4cfdc494bee32, type: 3}
+  m_PrefabInstance: {fileID: 636919769}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf6ffc972d3f4e74a48d57c30cb497b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResourceDropZone
 --- !u!1 &686450773
 GameObject:
   m_ObjectHideFlags: 0
@@ -2694,7 +2721,7 @@ MonoBehaviour:
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 1999249561}
-    PlayerPrefab: {fileID: 1855797244298458106, guid: 24e075b32f01fa74eae0fe6c15ccb589, type: 3}
+    PlayerPrefab: {fileID: 0}
     Prefabs:
       NetworkPrefabsLists:
       - {fileID: 11400000, guid: 2ac977ef6e720426089bcaa033337e53, type: 2}
@@ -2977,11 +3004,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8653317213066034545, guid: 73dbe4cc9c782f74db20a3ec1e60a2f5, type: 3}
+      propertyPath: m_InScenePlaced
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8653317213066034545, guid: 73dbe4cc9c782f74db20a3ec1e60a2f5, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3889523294
+      objectReference: {fileID: 0}
+    - target: {fileID: 8653317213066034545, guid: 73dbe4cc9c782f74db20a3ec1e60a2f5, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 1945080606
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73dbe4cc9c782f74db20a3ec1e60a2f5, type: 3}
+--- !u!114 &2488478570262511239 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2900160704921068073, guid: 73dbe4cc9c782f74db20a3ec1e60a2f5, type: 3}
+  m_PrefabInstance: {fileID: 2488478570262511238}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf6ffc972d3f4e74a48d57c30cb497b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResourceDropZone
 --- !u!1001 &5358238932391429143
 PrefabInstance:
   m_ObjectHideFlags: 0

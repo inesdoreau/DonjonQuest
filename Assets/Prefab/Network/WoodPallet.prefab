@@ -63,11 +63,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f1db39c40356fdb41bcd50a02557bba9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1495642277986051543}
   m_SourcePrefab: {fileID: 100100000, guid: f1db39c40356fdb41bcd50a02557bba9, type: 3}
 --- !u!4 &560239466413868446 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f1db39c40356fdb41bcd50a02557bba9, type: 3}
+  m_PrefabInstance: {fileID: 21646836741546613}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &904535776458481444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f1db39c40356fdb41bcd50a02557bba9, type: 3}
+  m_PrefabInstance: {fileID: 21646836741546613}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1495642277986051543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904535776458481444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0b25b3f95e5324abc80c09cb29f271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.Components.ComponentController
+  ShowTopMostFoldoutHeaderGroup: 1
+  StartEnabled: 0
+  Components:
+  - name: Wood_Plank_C (2) (Mesh Renderer)
+    InvertEnabled: 0
+    EnableDelay: 0
+    DisableDelay: 0
+    Component: {fileID: 1697138044359884529}
+--- !u!23 &1697138044359884529 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: f1db39c40356fdb41bcd50a02557bba9, type: 3}
   m_PrefabInstance: {fileID: 21646836741546613}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4399054931077862626
@@ -145,6 +178,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 666d8528f5ef37947bcd9b090299e89f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 646673476469326907}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 666d8528f5ef37947bcd9b090299e89f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8653317213066034545}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 666d8528f5ef37947bcd9b090299e89f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2900160704921068073}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 666d8528f5ef37947bcd9b090299e89f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7413928280285784597}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 666d8528f5ef37947bcd9b090299e89f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8483678967983321144}
   m_SourcePrefab: {fileID: 100100000, guid: 666d8528f5ef37947bcd9b090299e89f, type: 3}
 --- !u!1 &3588802615709706675 stripped
 GameObject:
@@ -184,6 +229,163 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.7242323, y: 0.96, z: 1.7242323}
   m_Center: {x: 0, y: 0.55, z: -0.000000059604645}
+--- !u!114 &8653317213066034545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3588802615709706675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+  GlobalObjectIdHash: 3889523294
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  m_InScenePlacedDisabledByDefault: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 0
+  m_InScenePlaced: 0
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &2900160704921068073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3588802615709706675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf6ffc972d3f4e74a48d57c30cb497b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResourceDropZone
+  ShowTopMostFoldoutHeaderGroup: 1
+  m_selectionOutline: {fileID: 872053719266738970}
+  m_componentControllers:
+  - {fileID: 5974369489101817017}
+  - {fileID: 2194968003533644849}
+  - {fileID: 1495642277986051543}
+  m_acceptedObjectType: 3
+  m_itemsAudio: {fileID: 0}
+--- !u!82 &7413928280285784597
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3588802615709706675}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &8483678967983321144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3588802615709706675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2569027e4263e47e895059922097f869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemsAudio
+  m_audioClip: {fileID: 0}
 --- !u!4 &4217106867965326089 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 666d8528f5ef37947bcd9b090299e89f, type: 3}
@@ -256,13 +458,46 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f1db39c40356fdb41bcd50a02557bba9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5974369489101817017}
   m_SourcePrefab: {fileID: 100100000, guid: f1db39c40356fdb41bcd50a02557bba9, type: 3}
+--- !u!23 &4823849643231102668 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: f1db39c40356fdb41bcd50a02557bba9, type: 3}
+  m_PrefabInstance: {fileID: 6138498721950587464}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5961338113458486691 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f1db39c40356fdb41bcd50a02557bba9, type: 3}
   m_PrefabInstance: {fileID: 6138498721950587464}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6481029239578617625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f1db39c40356fdb41bcd50a02557bba9, type: 3}
+  m_PrefabInstance: {fileID: 6138498721950587464}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5974369489101817017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6481029239578617625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0b25b3f95e5324abc80c09cb29f271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.Components.ComponentController
+  ShowTopMostFoldoutHeaderGroup: 1
+  StartEnabled: 0
+  Components:
+  - name: Wood_Plank_C (Mesh Renderer)
+    InvertEnabled: 0
+    EnableDelay: 0
+    DisableDelay: 0
+    Component: {fileID: 4823849643231102668}
 --- !u!1001 &6445146688126171531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -326,8 +561,41 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f1db39c40356fdb41bcd50a02557bba9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2194968003533644849}
   m_SourcePrefab: {fileID: 100100000, guid: f1db39c40356fdb41bcd50a02557bba9, type: 3}
+--- !u!23 &5670128009372837135 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: f1db39c40356fdb41bcd50a02557bba9, type: 3}
+  m_PrefabInstance: {fileID: 6445146688126171531}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6174623183778776282 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f1db39c40356fdb41bcd50a02557bba9, type: 3}
+  m_PrefabInstance: {fileID: 6445146688126171531}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2194968003533644849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6174623183778776282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0b25b3f95e5324abc80c09cb29f271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.Components.ComponentController
+  ShowTopMostFoldoutHeaderGroup: 1
+  StartEnabled: 0
+  Components:
+  - name: Wood_Plank_C (1) (Mesh Renderer)
+    InvertEnabled: 0
+    EnableDelay: 0
+    DisableDelay: 0
+    Component: {fileID: 5670128009372837135}
 --- !u!4 &6844200117540937312 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f1db39c40356fdb41bcd50a02557bba9, type: 3}
