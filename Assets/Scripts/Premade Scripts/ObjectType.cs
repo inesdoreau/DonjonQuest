@@ -4,5 +4,15 @@ public enum ObjectType
     Axe,
     PickAxe,
     Wood,
-    Stone
+    Stone, 
+    Key, 
+    Gold,
+}
+
+public enum Tooltype
+{
+    None,
+    Axe,
+    PickAxe,
+    Key,
 }

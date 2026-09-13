@@ -1,7 +1,15 @@
 using System;
+using System.Collections.Generic;
 using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine;
+
+[Serializable]
+public class HeldObject
+{
+    public ObjectType objectType;
+    public GameObject gameObject;   
+}
 
 public class PlayerController : NetworkBehaviour
 {
@@ -15,7 +23,9 @@ public class PlayerController : NetworkBehaviour
 
     private bool m_isInteracting;
     private bool m_isChopping;
-    [SerializeField] GameObject m_axeModel, m_pickAxeModel, m_woodModel, m_stoneModel;
+
+    [SerializeField] List<HeldObject> heldObjects;
+
     private NetworkVariable<ulong> m_heldNetworkObjectId = new(ulong.MaxValue);
     private NetworkVariable<ObjectType> m_heldObjectType = new(ObjectType.None);
     
@@ -33,7 +43,7 @@ public class PlayerController : NetworkBehaviour
         }
         if(m_isChopping || m_isInteracting)
             return;
-        if(m_heldObjectType.Value is ObjectType.Axe or ObjectType.PickAxe)
+        if(m_heldObjectType.Value is ObjectType.Axe or ObjectType.PickAxe or ObjectType.Key)
         {
             m_isChopping = true;
             m_animator.SetTrigger("Chop");
@@ -73,7 +83,7 @@ public class PlayerController : NetworkBehaviour
 
     private void HandleChopAction()
     {
-        if(m_heldObjectType.Value is ObjectType.Axe or ObjectType.PickAxe)
+        if(m_heldObjectType.Value is ObjectType.Axe or ObjectType.PickAxe or ObjectType.Key)
         {
             if(m_interactionDetector.ClosestInteractable is ResourceNode resourceNode)
             {
@@ -104,10 +114,14 @@ public class PlayerController : NetworkBehaviour
 
     private void HandleHeldItemChanged(ObjectType previousValue, ObjectType newValue)
     {
-        m_axeModel.SetActive(newValue == ObjectType.Axe);
-        m_pickAxeModel.SetActive(newValue == ObjectType.PickAxe);
-        m_woodModel.SetActive(newValue == ObjectType.Wood);
-        m_stoneModel.SetActive(newValue == ObjectType.Stone);
+        foreach(HeldObject heldObject in heldObjects)
+        {
+            heldObject.gameObject.SetActive(newValue == heldObject.objectType);
+        }
+        //m_axeModel.SetActive(newValue == ObjectType.Axe);
+        //m_pickAxeModel.SetActive(newValue == ObjectType.PickAxe);
+        //m_woodModel.SetActive(newValue == ObjectType.Wood);
+        //m_stoneModel.SetActive(newValue == ObjectType.Stone);
     }
 
     private void HandleAnimationDone()

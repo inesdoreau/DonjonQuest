@@ -1,12 +1,19 @@
+using System;
+using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
 
-// Todo : Change to a Singleton
+[Serializable]
+public class Resource
+{
+    public ObjectType objectType;
+    public NetworkObject objectPrefab;
+}
 public class ResourceSpawner : NetworkBehaviour
 {
     public static ResourceSpawner Instance { get; private set; }
 
-    [SerializeField] private NetworkObject m_woodPrefab, m_stonePrefab;
+    [SerializeField] private List<Resource> m_resources;
 
     private void Awake()
     {
@@ -23,8 +30,15 @@ public class ResourceSpawner : NetworkBehaviour
         if (IsServer == false)
             return;
 
-        NetworkObject resource = type == ObjectType.Wood ? m_woodPrefab : m_stonePrefab;
-        GameObject instance = Instantiate(resource.gameObject, position, Quaternion.Euler(0, Random.Range(0,360), 0));
-        instance.GetComponent<NetworkObject>().Spawn();
+        foreach (Resource resource in m_resources)
+        {
+            if(type == resource.objectType)
+            {
+                NetworkObject networkResource = resource.objectPrefab;
+                GameObject instance = Instantiate(networkResource.gameObject, position, Quaternion.Euler(0, UnityEngine.Random.Range(0,360), 0));
+                instance.GetComponent<NetworkObject>().Spawn();
+            }
+        }
+        
     }
 }
