@@ -1689,6 +1689,83 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7c992ce7c9e375b4c82190f1dbed0b56, type: 3}
   m_PrefabInstance: {fileID: 809292444}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &821644782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 821644784}
+  - component: {fileID: 821644783}
+  m_Layer: 0
+  m_Name: DungeonGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &821644783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821644782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66e7f23c811dbb645b39fee86b85f326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GamingCove.Generator.DungeonGenerator
+  floorPrefab: {fileID: 5859845848375469354, guid: f4092b4eda21f40c9b40016fdb565b4e, type: 3}
+  wallPrefab: {fileID: 691390317318992227, guid: a5aae47582d5c4601aa1bceeb39d60e5, type: 3}
+  doorPrefab: {fileID: 918087952419085343, guid: 4e19295647d83447b9cfe747213124b7, type: 3}
+  ceilingPrefab: {fileID: 0}
+  pillarPrefab: {fileID: 0}
+  gridSize: 43
+  minRoomSize: 7
+  maxRoomSize: 7
+  RandomRoomsAdded: 4
+  roomGap: 3
+  corridorWidth: 2
+  tilemap: {fileID: 0}
+  floorSize: {x: 0, y: 0, z: 0}
+  wallSize: {x: 0, y: 0, z: 0}
+  ceilingSize: {x: 0, y: 0, z: 0}
+  generatedCorridors: []
+  generatedRooms: []
+  roomCreator:
+    SpawnDoubleWalls: 0
+    HasDoubleWallTiles: 0
+    wallDepth: 0
+  dungeonGraph: {fileID: 11400000, guid: c475d935c25614bebb8ea10bd17a5254, type: 2}
+  playerPrefab: {fileID: 0}
+  RandomRoomContent: {fileID: 11400000, guid: cec018076a4b546ef8935b152c0da543, type: 2}
+  OnGenerationStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGenerationFinished:
+    m_PersistentCalls:
+      m_Calls: []
+  ShowOccupiedFloorTiles: 0
+  ShowOccupiedWalls: 0
+  ShowGridDebug: 0
+--- !u!4 &821644784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821644782}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 67.20347, y: 0, z: 50.9207}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -3416,3 +3493,4 @@ SceneRoots:
   - {fileID: 1130225140}
   - {fileID: 6747420165623325196}
   - {fileID: 6788022138729695936}
+  - {fileID: 821644784}

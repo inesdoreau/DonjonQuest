@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8306b579e4bf8304f9d8a20f97072b1d, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: 
+  generation:
+    minRooms: 15
+    maxRooms: 20
+    amountOfAdjacentRoomsToConnect: 3
+    minRoomWidth: 8
+    maxRoomWidth: 12
+    minRoomHeight: 8
+    maxRoomHeight: 12
+    minBossRoomWidth: 10
+    maxBossRoomWidth: 12
+    minBossRoomHeight: 10
+    maxBossRoomHeight: 12
+    areaWidth: 100
+    areaHeight: 100
+    minDistanceBetweenRooms: 1
+    walls:
+    - gameObject: {fileID: 6915405018105281009, guid: ae97a1497d21e4b8c8d4aeb6300588f4, type: 3}
+      name: Wall
+    - gameObject: {fileID: 5130977567176604775, guid: 3fa0de72191ab4541a71a529ffa0427a, type: 3}
+      name: Wall
+    - gameObject: {fileID: 6253669815486962154, guid: 5e388d0c5785a4ac691f740f61e20930, type: 3}
+      name: Wall
+    - gameObject: {fileID: 8535184007746959824, guid: 7beefec7825734a1885d258526c90a84, type: 3}
+      name: Wall
+    - gameObject: {fileID: 3602849731437236150, guid: 86704689cd3b74ee78601b8c86ff26fd, type: 3}
+      name: Wall
+    - gameObject: {fileID: 639906519993652131, guid: e97c3162f9928455ba654a3bf9785494, type: 3}
+      name: Wall
+    - gameObject: {fileID: 6777239698087204537, guid: d04af4ebb501b44f48139ce260077b03, type: 3}
+      name: Wall
+    - gameObject: {fileID: 2979215030515472823, guid: 24b152269b37e42a0b3e185a3c18cf70, type: 3}
+      name: Wall
+    - gameObject: {fileID: 959092009406792153, guid: 101d79ee6e491413db7ce45024c8b9de, type: 3}
+      name: Wall
+    - gameObject: {fileID: 304984293935846807, guid: d29da33c819e14d8982f4fab78a73fe5, type: 3}
+      name: Wall
+    - gameObject: {fileID: 3707820151578216580, guid: 5cdebc1da7bd947d0a40f1ed575e5bec, type: 3}
+      name: Wall
+    - gameObject: {fileID: 8853460259299114214, guid: f6332f2be56ed4c039ca3fae7d2b47cb, type: 3}
+      name: Wall
+    - gameObject: {fileID: 4687666749296014115, guid: 60f9f40aed04b43749af74eb6a47306f, type: 3}
+      name: Wall
+    outerCorners:
+    - gameObject: {fileID: 6339984928783639730, guid: 75a02d50df57e47e1a9227dcd336f5c4, type: 3}
+      name: Outer Corner
+    - gameObject: {fileID: 1956149689016013173, guid: ea3661949ea2547a0a64e5920a848a8f, type: 3}
+      name: Outer Corner
+    innerCorners:
+    - gameObject: {fileID: 3196652789416735504, guid: 98aa42030b0054a66a978de605438907, type: 3}
+      name: Inner Corner
+    deleteInnerCorners: 0
+    uCorners:
+    - gameObject: {fileID: 5863336054656428004, guid: f10464892009d4ca48cec85f5f10cc33, type: 3}
+      name: Square
+    squareCorners:
+    - gameObject: {fileID: 7865840738362573509, guid: 779a3738e7e3b425f9229d477c25d540, type: 3}
+      name: Square Corner
+    doors:
+    - gameObject: {fileID: 918087952419085343, guid: 4e19295647d83447b9cfe747213124b7, type: 3}
+      name: Dooor
+    doorsDisplacements:
+    - {x: 0, y: 0, z: 0}
+    flooring:
+    - gameObject: {fileID: 2078825503631045435, guid: 3f493525a36cf4b1d9f23d80ca52739f, type: 3}
+      name: Floor
+    - gameObject: {fileID: 2078825503631045435, guid: 3f493525a36cf4b1d9f23d80ca52739f, type: 3}
+      name: Floor
+    - gameObject: {fileID: 1673104851543696975, guid: 7121909a72f58488d89d8ed2e2a4f087, type: 3}
+      name: Floor
+    - gameObject: {fileID: 4798675086905153258, guid: 2cea508b102364ef6950a2e76efb1bab, type: 3}
+      name: Floor
+    - gameObject: {fileID: 701192215325891079, guid: d1d04458850e14a52a50d89208b207fb, type: 3}
+      name: Floor
+    - gameObject: {fileID: 8998013294248321147, guid: b06218a814aa64368ad2e183fdff095b, type: 3}
+      name: Floor
+    - gameObject: {fileID: 4447116032641420630, guid: cf9d9c1ee45db47758259d0a48d6aee1, type: 3}
+      name: Floor
+    - gameObject: {fileID: 4701765437630547291, guid: a35b9d721d7a04ac2a5a6f528f447208, type: 3}
+      name: Floor
+    - gameObject: {fileID: 8480077421495510152, guid: 46f33e8f983404faa82caca2f1a5d442, type: 3}
+      name: Floor
+    - gameObject: {fileID: 1901303358354748859, guid: 4d0be171e73c34286a0415ada689370e, type: 3}
+      name: Floor
+    - gameObject: {fileID: 7533664951991836015, guid: b5717fb84927f4b9dbeb6fb700ab402a, type: 3}
+      name: Floor
+    - gameObject: {fileID: 8372613896894681930, guid: 9a058207760c9424b8f67f7fbaee3f10, type: 3}
+      name: Floor
+    - gameObject: {fileID: 8784336248459560495, guid: fc68a9eff92954aa0a136480bc163cd6, type: 3}
+      name: Floor
+    - gameObject: {fileID: 4149835674915640656, guid: 01524d1e583a1437db01f01cdbb25929, type: 3}
+      name: Floor
+    - gameObject: {fileID: 2984927204022328521, guid: a9bbb8f3862974dfa82322814d2f21cb, type: 3}
+      name: Floor
+    - gameObject: {fileID: 218797874600975674, guid: e6d36f9bc1a04499fbaf614e1778c883, type: 3}
+      name: Floor
+    player: {fileID: 4290635144625780098, guid: 5106853c08de8444a979e9caad4d2a7f, type: 3}
+    minEnemiesPerRoom: 0
+    maxEnemiesPerRoom: 2
+    enemies:
+    - gameObject: {fileID: 5943886274223955098, guid: 2b8258857c1bd4766a5e77ddaf3ffa08, type: 3}
+      name: Skeleton
+    - gameObject: {fileID: 2860547602065756915, guid: 2d3ae71e0e513483d84228a32cb486e4, type: 3}
+      name: Barbarian
+    - gameObject: {fileID: 8652502545873503423, guid: 81db2a733fc384321b137c8e13ee9464, type: 3}
+      name: Barbarian
+    - gameObject: {fileID: 8609129866349474071, guid: 4e9954d5b8fb44b8cb9b2658eb6c65fa, type: 3}
+      name: Barbarian
+    bosses: []
+    breakables:
+    - gameObject: {fileID: 6130299147357891834, guid: 92db01cb8cbd145169de5b086e063144, type: 3}
+      name: Chest
+    - gameObject: {fileID: 359552879975765853, guid: 3b476be813dd446d6b347b73e574bf8d, type: 3}
+      name: Stone
+    - gameObject: {fileID: 6490392813280612738, guid: dffc342eb52b1444799f69108ae362fd, type: 3}
+      name: Tree
+    staticObjects:
+    - gameObject: {fileID: 7150301565930258685, guid: 0f593c205eb9e5a48825e85731d1f215, type: 3}
+      name: Axe
+    - gameObject: {fileID: 1503714520351427510, guid: 976574e626d1743b2b8fd1cee80c6665, type: 3}
+      name: Key
+    - gameObject: {fileID: 2797376856292171619, guid: 0d813fa26ac4fa24889ecc38506d5edd, type: 3}
+      name: Pickaxe
+    wallObjects: []
+    wallObjConsequitiveDistance: 1
+    wallObjDisplacements: []
+    cornerObjectsRate: 10
+    breakablesRate: 10
+    middleObjects:
+    - gameObject: {fileID: 919132149155446097, guid: e2ca2a0dbf3cb44be98993a3e33711ed, type: 3}
+      name: 
+    middleObjectsRate: 13
